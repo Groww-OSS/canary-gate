@@ -1,4 +1,4 @@
-package io.github.nilavanraj.canarygate.model;
+package io.github.growwoss.canarygate.model;
 
 public enum GatePermission {
 

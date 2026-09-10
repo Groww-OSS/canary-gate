@@ -1,9 +1,9 @@
-package io.github.nilavanraj.canarygate.core;
+package io.github.growwoss.canarygate.core;
 
-import io.github.nilavanraj.canarygate.CanaryGateProperties;
-import io.github.nilavanraj.canarygate.model.GateState;
-import io.github.nilavanraj.canarygate.model.GateStatus;
-import io.github.nilavanraj.canarygate.store.GateStateStore;
+import io.github.growwoss.canarygate.CanaryGateProperties;
+import io.github.growwoss.canarygate.model.GateState;
+import io.github.growwoss.canarygate.model.GateStatus;
+import io.github.growwoss.canarygate.store.GateStateStore;
 import org.springframework.context.ApplicationEventPublisher;
 
 import java.util.ArrayList;
@@ -13,13 +13,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/**
- * Builds and holds every FlowGate declared under canary-gate.flows, keyed by short (leaf) name.
- *
- * FlowProperties has no per-flow halfOpen/failureThreshold override, so every FlowGate built
- * here shares the same global HalfOpenProperties instance and failureThreshold value from
- * CanaryGateProperties — no inheritance/merge logic needed.
- */
 public class GateRegistry {
 
     private final Map<String, FlowGate> gates = new HashMap<>();
@@ -67,15 +60,10 @@ public class GateRegistry {
         return gates.values();
     }
 
-    /**
-     * Returns all transitive descendant gates for the given gate name.
-     * Used by the isAllowed check to detect degraded sub-branches.
-     */
     public List<FlowGate> getDescendants(String name) {
         return descendants.getOrDefault(name, List.of());
     }
 
-    // ── Startup wiring ────────────────────────────────────────────────────────
 
     private void walkBranches(String parentPath,
                               Map<String, CanaryGateProperties.FlowProperties> branches,

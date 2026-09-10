@@ -1,6 +1,6 @@
-package io.github.nilavanraj.canarygate.event;
+package io.github.growwoss.canarygate.event;
 
-import io.github.nilavanraj.canarygate.model.GateState;
+import io.github.growwoss.canarygate.model.GateState;
 import lombok.Getter;
 
 import java.time.Instant;

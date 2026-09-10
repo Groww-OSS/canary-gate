@@ -1,14 +1,14 @@
-package io.github.nilavanraj.canarygate;
+package io.github.growwoss.canarygate;
 
-import io.github.nilavanraj.canarygate.core.FlowGate;
-import io.github.nilavanraj.canarygate.core.GateRegistry;
-import io.github.nilavanraj.canarygate.core.StepHealthRecord;
-import io.github.nilavanraj.canarygate.event.GateStateChangedEvent;
-import io.github.nilavanraj.canarygate.model.GatePermission;
-import io.github.nilavanraj.canarygate.model.GateState;
-import io.github.nilavanraj.canarygate.model.StepOutcome;
-import io.github.nilavanraj.canarygate.store.GateKeys;
-import io.github.nilavanraj.canarygate.store.GateStateStore;
+import io.github.growwoss.canarygate.core.FlowGate;
+import io.github.growwoss.canarygate.core.GateRegistry;
+import io.github.growwoss.canarygate.core.StepHealthRecord;
+import io.github.growwoss.canarygate.event.GateStateChangedEvent;
+import io.github.growwoss.canarygate.model.GatePermission;
+import io.github.growwoss.canarygate.model.GateState;
+import io.github.growwoss.canarygate.model.StepOutcome;
+import io.github.growwoss.canarygate.store.GateKeys;
+import io.github.growwoss.canarygate.store.GateStateStore;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.event.EventListener;
 

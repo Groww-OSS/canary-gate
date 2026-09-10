@@ -1,8 +1,8 @@
-package io.github.nilavanraj.canarygate.aop;
+package io.github.growwoss.canarygate.aop;
 
-import io.github.nilavanraj.canarygate.CanaryGateService;
-import io.github.nilavanraj.canarygate.exception.GateBlockedException;
-import io.github.nilavanraj.canarygate.model.StepOutcome;
+import io.github.growwoss.canarygate.CanaryGateService;
+import io.github.growwoss.canarygate.exception.GateBlockedException;
+import io.github.growwoss.canarygate.model.StepOutcome;
 import lombok.RequiredArgsConstructor;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;

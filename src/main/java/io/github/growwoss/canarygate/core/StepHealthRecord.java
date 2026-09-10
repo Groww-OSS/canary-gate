@@ -1,6 +1,6 @@
-package io.github.nilavanraj.canarygate.core;
+package io.github.growwoss.canarygate.core;
 
-import io.github.nilavanraj.canarygate.model.StepOutcome;
+import io.github.growwoss.canarygate.model.StepOutcome;
 
 // basic sliding window for failer rate
 public class StepHealthRecord {

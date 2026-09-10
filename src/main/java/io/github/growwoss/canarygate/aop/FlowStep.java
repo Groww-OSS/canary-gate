@@ -1,4 +1,4 @@
-package io.github.nilavanraj.canarygate.aop;
+package io.github.growwoss.canarygate.aop;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -9,5 +9,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface FlowStep {
-    String value();  // step name matching application.yml key, e.g. "payment-initiate"
+    String value();
 }

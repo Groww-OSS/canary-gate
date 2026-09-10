@@ -1,4 +1,4 @@
-package io.github.nilavanraj.canarygate;
+package io.github.growwoss.canarygate;
 
 import lombok.Getter;
 import lombok.Setter;

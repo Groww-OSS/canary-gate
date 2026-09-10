@@ -1,12 +1,7 @@
-package io.github.nilavanraj.canarygate.store;
+package io.github.growwoss.canarygate.store;
 
 import java.util.concurrent.ConcurrentHashMap;
 
-/**
- * Default GateStateStore backed by a ConcurrentHashMap.
- * State is local to this JVM and lost on restart.
- * Suitable for single-instance services and local development.
- */
 public class InMemoryGateStateStore implements GateStateStore {
 
     private final ConcurrentHashMap<String, String> store = new ConcurrentHashMap<>();

@@ -1,9 +1,9 @@
-package io.github.nilavanraj.canarygate;
+package io.github.growwoss.canarygate;
 
-import io.github.nilavanraj.canarygate.aop.FlowStepAspect;
-import io.github.nilavanraj.canarygate.core.GateRegistry;
-import io.github.nilavanraj.canarygate.store.GateStateStore;
-import io.github.nilavanraj.canarygate.store.InMemoryGateStateStore;
+import io.github.growwoss.canarygate.aop.FlowStepAspect;
+import io.github.growwoss.canarygate.core.GateRegistry;
+import io.github.growwoss.canarygate.store.GateStateStore;
+import io.github.growwoss.canarygate.store.InMemoryGateStateStore;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

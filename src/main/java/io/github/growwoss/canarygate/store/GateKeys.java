@@ -1,4 +1,4 @@
-package io.github.nilavanraj.canarygate.store;
+package io.github.growwoss.canarygate.store;
 
 public final class GateKeys {
 

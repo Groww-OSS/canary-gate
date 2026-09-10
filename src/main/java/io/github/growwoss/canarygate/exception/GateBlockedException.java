@@ -1,4 +1,4 @@
-package io.github.nilavanraj.canarygate.exception;
+package io.github.growwoss.canarygate.exception;
 
 import lombok.Getter;
 

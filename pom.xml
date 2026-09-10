@@ -14,7 +14,7 @@
 		<relativePath/>
 	</parent>
 
-	<groupId>io.github.nilavanraj</groupId>
+	<groupId>io.github.growwoss</groupId>
 	<artifactId>canary-gate</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
@@ -40,20 +40,17 @@
 			<optional>true</optional>
 		</dependency>
 
-		<!-- Boilerplate reduction (getters/setters) -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
 
-		<!-- AOP support for @FlowStep and @GatedFlow aspects -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
 
-		<!-- Testing -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
