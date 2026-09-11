@@ -74,18 +74,6 @@ Once the payment service recovers, a few requests are allowed through as **canar
 
 ---
 
-## Installation
-
-Add the dependency to your Spring Boot application:
-
-```xml
-<dependency>
-    <groupId>io.github.nilavanraj</groupId>
-    <artifactId>canary-gate</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-</dependency>
-```
-
 ---
 
 ## Configuration
